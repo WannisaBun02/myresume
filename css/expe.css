@@ -104,7 +104,7 @@ h3 {
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.3vw;
     /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
     line-height: 1.1;
     /* ปรับความสูงบรรทัดตามฟอนต์ */
@@ -118,7 +118,7 @@ h3 {
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.3vw;
     /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
     line-height: 1.1;
     /* ปรับความสูงบรรทัดตามฟอนต์ */
@@ -173,7 +173,7 @@ p {
     .text_4,
     .text_5 {
         left: 10vw;
-        font-size: 2.5vw;
+        font-size: 3vw;
         /* ปรับขนาดฟอนต์สำหรับหน้าจอขนาดเล็ก */
         width: 90vw;
         /* ปรับความกว้างสำหรับหน้าจอขนาดเล็ก */
