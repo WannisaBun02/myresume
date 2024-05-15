@@ -79,7 +79,9 @@ ul li.logo {
     color: #000000;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-family: 'Chilanka';
     font-style: normal;
     font-weight: 400;
@@ -92,7 +94,7 @@ h1,h2,h3 {
 .text_2,
 .text_3,
 .text_4,
-.text_5{
+.text_5 {
     /* Experience */
     position: relative;
     font-family: 'Chilanka';
@@ -104,7 +106,21 @@ h1,h2,h3 {
     /* ปรับความสูงบรรทัดตามฟอนต์ */
     color: #000000;
 }
-p{
+
+.text_6 {
+    /* Experience */
+    position: relative;
+    font-family: 'Chilanka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
+    line-height: 1.1;
+    /* ปรับความสูงบรรทัดตามฟอนต์ */
+    color: #000000;
+}
+
+p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,8 +147,9 @@ p{
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a box shadow */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adding a box shadow */
 }
 
 /* Media Query สำหรับหน้าจอขนาดเล็ก */
@@ -155,6 +172,15 @@ p{
         width: 90vw;
         /* ปรับความกว้างสำหรับหน้าจอขนาดเล็ก */
     }
+
+    .text_6 {
+        left: 5vw;
+        font-size: 3vw;
+        /* ปรับขนาดฟอนต์สำหรับหน้าจอขนาดเล็ก */
+        width: 90vw;
+        /* ปรับความกว้างสำหรับหน้าจอขนาดเล็ก */
+    }
+
     .img_2,
     .img_3,
     .img_4 {
