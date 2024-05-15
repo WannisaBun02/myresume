@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&family=IM+Fell+French+Canon+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
     margin: 0;
@@ -82,7 +83,8 @@ ul li.logo {
 h1,
 h2,
 h3 {
-    font-family: 'Chilanka';
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
     /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
@@ -97,10 +99,11 @@ h3 {
 .text_5 {
     /* Experience */
     position: relative;
-    font-family: 'Chilanka';
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 5vw;
     /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
     line-height: 1.1;
     /* ปรับความสูงบรรทัดตามฟอนต์ */
@@ -110,7 +113,8 @@ h3 {
 .text_6 {
     /* Experience */
     position: relative;
-    font-family: 'Chilanka';
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
     font-size: 1.3vw;
@@ -124,7 +128,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Chilanka';
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
     line-height: 1.1;
