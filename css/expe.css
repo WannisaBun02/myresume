@@ -1,0 +1,180 @@
+@import url('https://fonts.cdnfonts.com/css/italiana');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=IM+Fell+French+Canon+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+/* nav */
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+ul li.logo {
+    margin-right: auto;
+}
+
+.right-nav {
+    display: flex;
+    gap: 10px;
+    /* Adjust the gap between the right aligned items */
+}
+
+/* text */
+.text_1 {
+    position: static;
+    width: 80vw;
+    /* กำหนดความกว้างเป็น 80% ของความกว้างหน้าจอ */
+    height: auto;
+    /* ปล่อยให้ความสูงปรับตามเนื้อหา */
+    left: 20vw;
+    /* กำหนดตำแหน่งชิดซ้ายเป็น 10% ของความกว้างหน้าจอ */
+    top: 15vh;
+    /* กำหนดตำแหน่งชิดบนเป็น 20% ของความสูงหน้าจอ */
+    transform: translateX(30%);
+    /* เลื่อนตำแหน่งให้ขนาดขององค์ประกอบอยู่กลางแนวนอน */
+    font-family: "IM Fell French Canon SC", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    /* กำหนดขนาดฟอนต์เป็น 4% ของความกว้างหน้าจอ */
+    line-height: 1.2;
+    /* ปรับความสูงบรรทัดตามฟอนต์ */
+    letter-spacing: 0.13em;
+
+    color: #000000;
+}
+
+h1,h2,h3 {
+    font-family: 'Chilanka';
+    font-style: normal;
+    font-weight: 400;
+    /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
+    line-height: 1.1;
+    /* ปรับความสูงบรรทัดตามฟอนต์ */
+    color: #000000;
+}
+
+.text_2,
+.text_3,
+.text_4,
+.text_5{
+    /* Experience */
+    position: relative;
+    font-family: 'Chilanka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
+    line-height: 1.1;
+    /* ปรับความสูงบรรทัดตามฟอนต์ */
+    color: #000000;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chilanka';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.img_2,
+.img_3,
+.img_4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.img_2 img,
+.img_3 img,
+.img_4 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a box shadow */
+}
+
+/* Media Query สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 600px) {
+    .text_1 {
+        left: 10vw;
+        font-size: 4vw;
+        /* ปรับขนาดฟอนต์สำหรับหน้าจอขนาดเล็ก */
+        width: 90vw;
+        /* ปรับความกว้างสำหรับหน้าจอขนาดเล็ก */
+    }
+
+    .text_2,
+    .text_3,
+    .text_4,
+    .text_5 {
+        left: 10vw;
+        font-size: 2.5vw;
+        /* ปรับขนาดฟอนต์สำหรับหน้าจอขนาดเล็ก */
+        width: 90vw;
+        /* ปรับความกว้างสำหรับหน้าจอขนาดเล็ก */
+    }
+    .img_2,
+    .img_3,
+    .img_4 {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .img_2 img,
+    .img_3 img,
+    .text_4 img {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    ul li a {
+        padding: 7px 15px;
+
+    }
+}

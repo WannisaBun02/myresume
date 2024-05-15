@@ -1,0 +1,223 @@
+@import url('https://fonts.cdnfonts.com/css/italiana');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+/* img */
+.index_bg {
+    float: right;
+}
+
+.index_bg img {
+    max-width: 100%;
+    max-height: 100vh;
+    filter: brightness(70%);
+    transition: filter 0.3s ease;
+
+}
+
+.index_bg img:hover {
+    filter: brightness(100%);
+    /* กลับสู่สีปกติเมื่อนำเมาส์ไปชี้ที่รูป */
+}
+
+/* resume text */
+.mresm {
+    position: absolute;
+    width: 50%;
+    /* ให้ความกว้างเป็น 50% ของหน้าจอ */
+    height: 20%;
+    /* ให้ความสูงเป็น 20% ของหน้าจอ */
+    left: 25%;
+    /* ให้ตำแหน่งชิดซ้ายเท่ากับ 25% ของหน้าจอ */
+    top: 30%;
+    /* ให้ตำแหน่งชิดบนเท่ากับ 30% ของหน้าจอ */
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    /* ให้ขนาดตัวอักษรเป็น 5% ของความกว้างของหน้าจอ */
+    line-height: 6vw;
+    /* ให้ความสูงของบรรทัดเป็น 6% ของความกว้างของหน้าจอ */
+    color: #FFFFFF;
+}
+
+/* sawbb text */
+.sawb {
+    position: absolute;
+    width: 10%;
+    /* ให้ความกว้างเป็น 10% ของหน้าจอ */
+    height: 5%;
+    /* ให้ความสูงเป็น 5% ของหน้าจอ */
+    left: 44%;
+    /* ให้ตำแหน่งชิดซ้ายเท่ากับ 60% ของหน้าจอ */
+    top: 25%;
+    /* ให้ตำแหน่งชิดบนเท่ากับ 30% ของหน้าจอ */
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    /* ให้ขนาดตัวอักษรเป็น 3% ของความกว้างของหน้าจอ */
+    line-height: 4vw;
+    /* ให้ความสูงของบรรทัดเป็น 4% ของความกว้างของหน้าจอ */
+    color: #FFFFFF;
+}
+
+/* ตำแหน่ง text */
+.posit {
+    position: absolute;
+    width: 40%;
+    /* ให้ความกว้างเป็น 40% ของหน้าจอ */
+    height: 4%;
+    /* ให้ความสูงเป็น 4% ของหน้าจอ */
+    left: 30%;
+    /* ให้ตำแหน่งชิดซ้ายเท่ากับ 20% ของหน้าจอ */
+    top: 40%;
+    /* ให้ตำแหน่งชิดบนเท่ากับ 60% ของหน้าจอ */
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    /* ให้ขนาดตัวอักษรเป็น 2.5% ของความกว้างของหน้าจอ */
+    line-height: 3.5vw;
+    /* ให้ความสูงของบรรทัดเป็น 3.5% ของความกว้างของหน้าจอ */
+    color: #FFFFFF;
+}
+
+/* คนเข้าชมเว็บ text */
+.p_view {
+    position: absolute;
+    width: 20%;
+    /* ให้ความกว้างเป็น 20% ของหน้าจอ */
+    height: 4%;
+    /* ให้ความสูงเป็น 4% ของหน้าจอ */
+    left: 6%;
+    /* ให้ตำแหน่งชิดซ้ายเท่ากับ 6% ของหน้าจอ */
+    top: 3%;
+    /* ให้ตำแหน่งชิดบนเท่ากับ 3% ของหน้าจอ */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    /* ให้ขนาดตัวอักษรเป็น 2% ของความกว้างของหน้าจอ */
+    line-height: 3vw;
+    /* ให้ความสูงของบรรทัดเป็น 3% ของความกว้างของหน้าจอ */
+    color: #FFFFFF;
+}
+
+/* nav text */
+#menu {
+    position: absolute;
+    width: 40%;
+    /* ให้ความกว้างเป็น 40% ของหน้าจอ */
+    height: 4%;
+    /* ให้ความสูงเป็น 4% ของหน้าจอ */
+    left: 17%;
+    /* ให้ตำแหน่งชิดซ้ายเท่ากับ 17% ของหน้าจอ */
+    top: 50%;
+    /* ให้ตำแหน่งชิดบนเท่ากับ 50% ของหน้าจอ */
+    transform: translateY(-50%);
+    /* ให้เลื่อนแนวนอนไปด้านบนทีเดียว */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2px, auto));
+    /* ให้แต่ละรายการมีความกว้างอย่างน้อย 5% และยืดหยุ่นตามขนาดของเนื้อหา */
+    justify-content: space-around;
+    /* จัดตำแหน่งแต่ละรายการไปตามช่องว่าง */
+    align-items: center;
+    /* จัดให้รายการแนวตั้งกลายเป็นแนวนอนตามจุดศูนย์กลาง */
+    list-style-type: none;
+    /* ลบเครื่องหมายลูกศรของรายการ */
+    gap: 1px;
+    /* เพิ่มระยะห่างระหว่างช่อง */
+}
+
+#menu li a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    /* ให้ขนาดตัวอักษรเป็น 1.5% ของความกว้างของหน้าจอ */
+    line-height: 2vw;
+    /* ให้ความสูงของบรรทัดเป็น 2.5% ของความกว้างของหน้าจอ */
+    color: #FFFFFF;
+    /* กำหนดสีของตัวอักษรเป็นสีขาว */
+    text-decoration: none;
+    /* ลบเส้นใต้ข้อความ */
+}
+
+#menu li a:hover {
+    text-decoration: underline;
+    /* เพิ่มเส้นใต้ข้อความเมื่อชี้ */
+}
+
+/* Media Query สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 600px) {
+    .index_bg {
+        filter: brightness(50%);
+    }
+
+    .mresm {
+        font-size: 10vw;
+        /* ให้ขนาดตัวอักษรเป็น 5% ของความกว้างของหน้าจอ */
+    }
+
+    .sawb {
+        font-size: 4vw;
+        /* ให้ขนาดตัวอักษรเป็น 5% ของความกว้างของหน้าจอ */
+        height: 5%;
+        /* ให้ความสูงเป็น 5% ของหน้าจอ */
+        left: 63%;
+        /* ให้ตำแหน่งชิดซ้ายเท่ากับ 60% ของหน้าจอ */
+        top: 27%;
+    }
+
+    .posit {
+        font-size: 2vw;
+        /* ให้ขนาดตัวอักษรเป็น 5% ของความกว้างของหน้าจอ */
+        height: 4%;
+        /* ให้ความสูงเป็น 4% ของหน้าจอ */
+        left: 35%;
+        /* ให้ตำแหน่งชิดซ้ายเท่ากับ 20% ของหน้าจอ */
+        top: 35%;
+    }
+
+    #menu {
+        width: 40%;
+        /* ให้ความกว้างเป็น 40% ของหน้าจอ */
+        height: 4%;
+        /* ให้ความสูงเป็น 4% ของหน้าจอ */
+        left: 27%;
+        /* ให้ตำแหน่งชิดซ้ายเท่ากับ 17% ของหน้าจอ */
+        top: 40%;
+        /* ให้ตำแหน่งชิดบนเท่ากับ 50% ของหน้าจอ */
+        transform: translateY(-50%);
+        /* ให้เลื่อนแนวนอนไปด้านบนทีเดียว */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(2px, auto));
+        /* ให้แต่ละรายการมีความกว้างอย่างน้อย 5% และยืดหยุ่นตามขนาดของเนื้อหา */
+        justify-content: space-around;
+        /* จัดตำแหน่งแต่ละรายการไปตามช่องว่าง */
+        align-items: center;
+        /* จัดให้รายการแนวตั้งกลายเป็นแนวนอนตามจุดศูนย์กลาง */
+        list-style-type: none;
+        /* ลบเครื่องหมายลูกศรของรายการ */
+        gap: 1px;
+        /* เพิ่มระยะห่างระหว่างช่อง */
+    }
+    
+    #menu li a {
+        font-size: 2vw;
+        /* ให้ขนาดตัวอักษรเป็น 1.5% ของความกว้างของหน้าจอ */
+    }
+
+}

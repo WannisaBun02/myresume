@@ -1,0 +1,333 @@
+@import url('https://fonts.cdnfonts.com/css/italiana');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=IM+Fell+French+Canon+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+}
+/* nav */
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+ul li.logo {
+    margin-right: auto;
+}
+
+.right-nav {
+    display: flex;
+    gap: 10px;
+    /* Adjust the gap between the right aligned items */
+}
+
+.img_me {
+    position: relative;
+    width: 100%;
+    /* Ensure the container spans the full width */
+    height: 100vh;
+    /* Ensure the container spans the full height of the viewport */
+    overflow: hidden;
+    /* Hide overflow to ensure no scrollbars */
+}
+
+/* img */
+.img_me img {
+    max-width: 100%;
+    max-height: 100vh;
+    position: absolute;
+    /* Enable absolute positioning for centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* text */
+/* Programmer Developer & IT Support */
+.text_1 {
+    position: absolute;
+    width: 80vw;
+    /* กำหนดความกว้างเป็น 80% ของความกว้างหน้าจอ */
+    height: auto;
+    /* ปล่อยให้ความสูงปรับตามเนื้อหา */
+    left: 20vw;
+    /* กำหนดตำแหน่งชิดซ้ายเป็น 10% ของความกว้างหน้าจอ */
+    top: 15vh;
+    /* กำหนดตำแหน่งชิดบนเป็น 20% ของความสูงหน้าจอ */
+
+    font-family: "IM Fell French Canon SC", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    /* กำหนดขนาดฟอนต์เป็น 4% ของความกว้างหน้าจอ */
+    line-height: 1.2;
+    /* ปรับความสูงบรรทัดตามฟอนต์ */
+    letter-spacing: 0.13em;
+
+    color: #000000;
+}
+
+/* About_me */
+h1 {
+    font-family: "Chilanka", cursive;
+    font-style: normal;
+}
+
+.text_2, .text_3 {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    top: 50vh;
+    transform: translateY(-50%);
+    font-family: "Chilanka", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 1.2;
+    letter-spacing: 0.13em;
+    color: #000000;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        left: -35vw; /* Start off-screen to the left */
+        opacity: 0;
+    }
+    to {
+        left: 15vw; /* Move to final position */
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        left: 100vw; /* Start off-screen to the right */
+        opacity: 0;
+    }
+    to {
+        left: 65vw; /* Move to final position */
+        opacity: 1;
+    }
+}
+
+.text_2.show {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.text_3.show {
+    animation: slideInRight 1s ease forwards;
+}
+
+.text_4 {
+    position: absolute;
+    width: 60vw;
+    /* กำหนดความกว้างเป็น 60% ของความกว้างหน้าจอ */
+    height: auto;
+    /* ปล่อยให้ความสูงปรับตามเนื้อหา */
+    left: 5vw;
+    /* กำหนดตำแหน่งชิดซ้ายเป็น 5% ของความกว้างหน้าจอ */
+    top: 85vh;
+    /* กำหนดตำแหน่งชิดบนเป็น 85% ของความสูงหน้าจอ */
+
+    font-family: 'Chilanka';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
+    line-height: 1.1;
+    /* ปรับความสูงบรรทัดตามฟอนต์ */
+    color: #000000;
+}
+.text_5 {
+    position: absolute;
+    width: 60vw;
+    /* กำหนดความกว้างเป็น 60% ของความกว้างหน้าจอ */
+    height: auto;
+    /* ปล่อยให้ความสูงปรับตามเนื้อหา */
+    left: 70vw;
+    /* กำหนดตำแหน่งชิดซ้ายเป็น 5% ของความกว้างหน้าจอ */
+    top: 85vh;
+    justify-content: center; /* จัดแนวนอนกลาง */
+    align-items: center; /* จัดแนวตั้งกลาง */
+}
+
+.text_5 .comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .comic-button:hover {
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+  }
+  
+  .comic-button:active {
+    background-color: #ff6f6f;
+    color: #ffffff;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+  .popup {
+    display: none; /* ซ่อนป็อปอัพในตอนแรก */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+width: 80%; /* ปรับความกว้างให้ใหญ่ขึ้น เช่นเดียวกับความสูง */
+height: 80%; /* ปรับความสูงให้ใหญ่ขึ้น เช่นเดียวกับความกว้าง */
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.popup-content iframe {
+    width: 100%;
+    height: 45%; /* ปรับความสูงเพื่อให้มีสองอันพอดี */
+}
+
+.close-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Media Query สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 600px) {
+    .text_1 {
+        left: 10vw;
+        font-size: 4vw;
+        /* ปรับขนาดฟอนต์สำหรับหน้าจอขนาดเล็ก */
+        width: 90vw;
+        /* ปรับความกว้างสำหรับหน้าจอขนาดเล็ก */
+    }
+
+    .text_2.show {
+        font-size: 2.7vw;
+        /* ปรับขนาดฟอนต์สำหรับหน้าจอขนาดเล็ก */
+        width: 50vw;
+        /* ปรับความกว้างสำหรับหน้าจอขนาดเล็ก */
+        left: 10vw;
+        /* ปรับตำแหน่งชิดซ้ายสำหรับหน้าจอขนาดเล็ก */
+        top: 30vh;
+        /* ปรับตำแหน่งชิดบนสำหรับหน้าจอขนาดเล็ก */
+    }
+
+    
+    @keyframes slideInRight {
+        from {
+            left: 100vw; /* Start off-screen to the right */
+            opacity: 0;
+            font-size: 2.7vw;
+        }
+        to {
+            left: 15vw; /* Move to final position */
+            opacity: 1;
+            font-size: 2.7vw;
+        }
+    }
+
+    .img_me img {
+        opacity: 0.5;
+        /* ลดความทึบลงเป็น 50% */
+        width: 400vw;
+        /* เพิ่มความกว้างเป็น 400% */
+        height: auto;
+        /* ปล่อยให้ความสูงปรับตามเพื่อรักษาสัดส่วน */
+        left: 70vw;
+        /* ปรับตำแหน่งชิดซ้ายสำหรับหน้าจอขนาดเล็ก */
+        top: 50vh;
+        /* ปรับตำแหน่งชิดบนสำหรับหน้าจอขนาดเล็ก */
+    }
+
+    .text_4 {
+        font-size: 3vw;
+        /* ปรับขนาดฟอนต์สำหรับหน้าจอขนาดเล็ก */
+        width: 90vw;
+        /* ปรับความกว้างสำหรับหน้าจอขนาดเล็ก */
+        left: 15vw;
+        /* ปรับตำแหน่งชิดซ้ายสำหรับหน้าจอขนาดเล็ก */
+        top: 70vh;
+        /* ปรับตำแหน่งชิดบนสำหรับหน้าจอขนาดเล็ก */
+    }
+    .text_5 {
+        
+        width: 60vw;
+        /* กำหนดความกว้างเป็น 60% ของความกว้างหน้าจอ */
+        left: 70vw;
+        /* กำหนดตำแหน่งชิดซ้ายเป็น 5% ของความกว้างหน้าจอ */
+        top: 85vh;
+    }
+    
+    .text_5 .comic-button {
+        padding: 5px 10px;
+        font-size: 10px;
+      }
+      
+
+    ul li a {
+        padding: 7px 15px;
+
+    }
+}
