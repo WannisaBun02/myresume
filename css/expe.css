@@ -83,7 +83,8 @@ ul li.logo {
 h1,
 h2,
 h3 {
-    font-family: "Inter", sans-serif;
+    font-family: "Nunito", sans-serif;
+    /* font-optical-sizing: auto; */
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
@@ -103,7 +104,7 @@ h3 {
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
-    font-size: 5vw;
+    font-size: 2.5vw;
     /* กำหนดขนาดฟอนต์เป็น 2% ของความกว้างหน้าจอ */
     line-height: 1.1;
     /* ปรับความสูงบรรทัดตามฟอนต์ */
@@ -201,7 +202,7 @@ p {
     }
 
     h1 {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     ul li a {
