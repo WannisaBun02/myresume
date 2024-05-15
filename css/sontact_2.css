@@ -232,7 +232,7 @@ ul li.logo {
     .smd {
         width: 80vw;  /* 80% of the viewport width */
         left: 10vw;   /* 10% of the viewport width from the left */
-        top: 20vh;    /* 20% of the viewport height from the top */
+        top: 50vh;    /* 20% of the viewport height from the top */
         font-size: 5vw;  /* Further increase font size */
     }
     .img_me img {
