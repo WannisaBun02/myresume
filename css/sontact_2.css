@@ -225,14 +225,14 @@ ul li.logo {
 @media (max-width: 480px) {
     .text_2 {
         width: 80vw;  /* 80% of the viewport width */
-        left: 35vw;   /* 10% of the viewport width from the left */
+        left: 30vw;   /* 10% of the viewport width from the left */
         top: 30vh;   /* 20% of the viewport height from the top */
         font-size: 4vw;  /* Further increase font size */
     }
     .smd {
         width: 80vw;  /* 80% of the viewport width */
         left: 10vw;   /* 10% of the viewport width from the left */
-        top: 45vh;    /* 20% of the viewport height from the top */
+        top: 40vh;    /* 20% of the viewport height from the top */
         font-size: 5vw;  /* Further increase font size */
     }
     .img_me img {
