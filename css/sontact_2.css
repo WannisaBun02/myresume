@@ -77,7 +77,7 @@ ul li.logo {
 
 /* text */
 .text_1 {
-    position: static;
+    position: absolute;
     width: 80vw;
     /* กำหนดความกว้างเป็น 80% ของความกว้างหน้าจอ */
     height: auto;
