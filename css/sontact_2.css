@@ -70,7 +70,7 @@ ul li.logo {
     max-height: 100vh;
     position: absolute;
     /* Enable absolute positioning for centering */
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -82,9 +82,9 @@ ul li.logo {
     /* กำหนดความกว้างเป็น 80% ของความกว้างหน้าจอ */
     height: auto;
     /* ปล่อยให้ความสูงปรับตามเนื้อหา */
-    left: 20vw;
+    left: 35vw;
     /* กำหนดตำแหน่งชิดซ้ายเป็น 10% ของความกว้างหน้าจอ */
-    top: 10vh;
+    top: 15vh;
     /* กำหนดตำแหน่งชิดบนเป็น 20% ของความสูงหน้าจอ */
 
     font-family: "IM Fell French Canon SC", serif;
