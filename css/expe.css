@@ -62,11 +62,11 @@ ul li.logo {
     /* กำหนดความกว้างเป็น 80% ของความกว้างหน้าจอ */
     height: auto;
     /* ปล่อยให้ความสูงปรับตามเนื้อหา */
-   
+    left: 20vw;
+    /* กำหนดตำแหน่งชิดซ้ายเป็น 10% ของความกว้างหน้าจอ */
+    top: 15vh;
     /* กำหนดตำแหน่งชิดบนเป็น 20% ของความสูงหน้าจอ */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transform: translateX(10%);
     /* เลื่อนตำแหน่งให้ขนาดขององค์ประกอบอยู่กลางแนวนอน */
     font-family: "IM Fell French Canon SC", serif;
     font-style: normal;
