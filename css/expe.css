@@ -158,7 +158,7 @@ p {
     /* Adding a box shadow */
 }
 
-.img_5 {
+.img_5 img{
     width: 100%;
     display: flex;
     justify-content: center;
